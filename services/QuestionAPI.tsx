@@ -1,33 +1,6 @@
-// services/api.ts
-
 import apiClient from './apiClient';
 import { ApiResponse } from '../types/ApiResponse';
-
-interface Question {
-  id: number;
-  title: string;
-  content: string;
-  inTime: number;
-  commentCount: number;
-  collectCount: number;
-  view: number;
-  top: boolean;
-  good: boolean;
-  upIds: string | null;
-  avatar: string;
-  userId: number;
-  username: string;
-  tags: Tag[]; 
-  style: string; 
-}
-interface Tag {
-  id: number;
-  name: string;
-  description: string | null;
-  icon: string | null;
-  topicCount: number;
-  inTime: number;
-}
+import { Question } from '../types/Question';
 
 export const getQuestions = async (url: string): Promise<Question[]> => {
   const response = await apiClient.get<ApiResponse<any>>(url);

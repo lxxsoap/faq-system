@@ -1,32 +1,7 @@
 "use client";  // 将组件标记为客户端组件
 import React from 'react';
 import QuestionItem from "@/components/question/list/QuestionItem";
-
-interface Question {
-  id: number;
-  title: string;
-  content: string;
-  inTime: number;
-  commentCount: number;
-  collectCount: number;
-  view: number;
-  top: boolean;
-  good: boolean;
-  upIds: string | null;
-  avatar: string;
-  userId: number;
-  username: string;
-  tags: Tag[]; 
-  style: string; 
-}
-interface Tag {
-  id: number;
-  name: string;
-  description: string | null;
-  icon: string | null;
-  topicCount: number;
-  inTime: number;
-}
+import { Question } from '@/types/Question';
 
 interface QuestionListProps {
   questions: Question[];
