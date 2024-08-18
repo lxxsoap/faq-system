@@ -40,6 +40,5 @@ export interface Tag {
     username: string;
     tags: Tag[];
     style: string;
-    collects: number; 
     comments: Comment[];
   }

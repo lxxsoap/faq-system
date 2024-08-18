@@ -21,7 +21,7 @@ const QuestionList: React.FC<QuestionListProps> = ({ questions, loading, error }
   return (
     <div>
       {questions.map((question) => (
-        <QuestionItem key={question.id} question={question} />
+        <QuestionItem key={question.id} question={question} showFullContent={false} />
       ))}
     </div>
   );

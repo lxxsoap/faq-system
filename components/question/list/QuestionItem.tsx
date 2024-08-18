@@ -2,12 +2,13 @@
 import React, { FunctionComponent, memo, useCallback } from 'react';
 import styles from './Questionitem.module.css';
 import { Question } from '@/types/Question';
+
 interface QuestionItemProps {
   question: Question;
+  showFullContent: boolean; // 新增属性
 }
 
-const QuestionItem: FunctionComponent<QuestionItemProps> = ({ question }) => {
-  console.log('Received question:', question);
+const QuestionItem: FunctionComponent<QuestionItemProps> = ({ question, showFullContent }) => {
   const onListItemContainerClick = useCallback(() => {
     // 点击事件处理逻辑
   }, [question]);
@@ -30,7 +31,9 @@ const QuestionItem: FunctionComponent<QuestionItemProps> = ({ question }) => {
           </div>
         </div>
       </div>
-      <div className={styles.supportingText}>{question.content}</div>
+      <div className={styles.supportingText}>
+        {showFullContent ? question.content : `${question.content.slice(0, 20)}...`}
+      </div>
       <div className={styles.stateLayerOverlay} />
       <div className={styles.stateLayer}>
         <div className={styles.leadingElement}>
