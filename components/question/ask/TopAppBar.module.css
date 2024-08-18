@@ -1,0 +1,23 @@
+.icon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+}
+.stateLayer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+.container {
+    position: relative;
+    border-radius: 100px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+

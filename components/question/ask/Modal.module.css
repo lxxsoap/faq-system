@@ -1,0 +1,33 @@
+/* Modal.module.css */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    position: relative; /* 设置为相对定位 */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    z-index: 1001;
+}
+
+.closeButton {
+    position: absolute; /* 设置为绝对定位 */
+    top: 10px; /* 距离顶部10px */
+    right: 10px; /* 距离右侧10px */
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}

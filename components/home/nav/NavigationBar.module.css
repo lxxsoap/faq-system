@@ -1,0 +1,237 @@
+.icon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.stateLayer {
+    width: 64px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 20px;
+    box-sizing: border-box;
+}
+.iconContainer {
+    border-radius: 16px;
+  
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.labelText {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    font-weight: 600;
+}
+.segment1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0px 16px;
+    gap: 4px;
+    color: #1d1b20;
+}
+.icon1 {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.iconContainer1 {
+    border-radius: 16px;
+  
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.labelText1 {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    font-weight: 500;
+}
+.segment2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0px 16px;
+    gap: 4px;
+    color: #1d1b20;
+}
+.icon2 {
+    width: 24px;
+    position: relative;
+    height: 24px;
+}
+.stateLayer2 {
+    width: 64px;
+  
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 20px;
+    box-sizing: border-box;
+}
+.iconContainer2 {
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.icon3 {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    object-fit: cover;
+}
+.stateLayer3 {
+    width: 64px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 20px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+.badgeLabel {
+    flex: 1;
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    font-weight: 500;
+}
+.badge {
+    margin: 0 !important;
+    position: absolute;
+    top: 2px;
+    left: 16px;
+    border-radius: 100px;
+    background-color: #b3261e;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 4px;
+    box-sizing: border-box;
+    min-width: 16px;
+    max-width: 34px;
+    z-index: 1;
+}
+.iconContainer3 {
+    border-radius: 16px;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.labelText3 {
+    align-self: stretch;
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #49454f;
+}
+.segment4 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0px 16px;
+    gap: 4px;
+    font-size: 11px;
+    color: #fff;
+}
+.initial {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.icon4 {
+    width: 24px;
+    position: relative;
+    border-radius: 100px;
+    background-color: #4f378b;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.segment5 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0px 16px;
+    gap: 4px;
+    font-size: 16px;
+    color: #eaddff;
+    
+}
+.navigationBar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    border-top: 1px solid #cac4d0;
+    box-sizing: border-box;
+    width: 393px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 8px;
+    gap: 8px;
+}
+.navigationBar5 {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 80px;
+    text-align: center;
+    font-size: 12px;
+    color: #49454f;
+    font-family: Roboto;
+}
+
+.activeIcon {
+    background-color: #e8def8; /* 你想要的高亮背景颜色 */
+    border-radius: 8px; /* 根据需要调整样式 */
+}

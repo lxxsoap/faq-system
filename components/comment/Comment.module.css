@@ -1,0 +1,112 @@
+.initial {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.buildingBlocksmonogram {
+    width: 40px;
+    position: relative;
+    border-radius: 100px;
+    background-color: #eaddff;
+    height: 40px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.leadingElement {
+    height: 64px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.headline {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+}
+.supportingText {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    color: #49454f;
+}
+.content {
+    align-self: stretch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.subhead {
+    flex: 1;
+    position: relative;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+}
+.heartIcon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+}
+.subhead1 {
+    width: 14px;
+    position: relative;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.heartParent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.subheadParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #49454f;
+}
+.contentParent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    text-align: left;
+    color: #1d1b20;
+}
+.listItemreply {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 24px 12px 16px;
+    box-sizing: border-box;
+    gap: 16px;
+    text-align: center;
+    font-size: 16px;
+    color: #21005d;
+    font-family: Roboto;
+}
+
