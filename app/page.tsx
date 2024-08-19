@@ -1,4 +1,4 @@
-
+import NavigationBar from "@/components/common/nav/NavigationBar";
 import Homesearch from "@/components/home/search/Homesearch";
 import QuestionListContainer from "@/components/question/list/QuestionListContainer";
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     <Homesearch />
     
     <QuestionListContainer url="/api/topic/list" />
-
+    <NavigationBar />
   </div>
   );
 }

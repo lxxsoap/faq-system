@@ -1,8 +1,11 @@
-import { FunctionComponent } from 'react';
 import styles from './CommentItem.module.css';
-
-
-const CommentItem:FunctionComponent = () => {
+import { Comment } from '@/types/Question';
+import { format } from 'date-fns';
+interface ReplyProps {
+    comment: Comment;
+  }
+const CommentItem:React.FC<ReplyProps> = ({ comment }) => {
+	const formattedDate = format(new Date(comment.inTime), 'yyyy-MM-dd');
   	return (
     		<div className={styles.listItemreply}>
       			<div className={styles.leadingElement}>
@@ -12,14 +15,14 @@ const CommentItem:FunctionComponent = () => {
       			</div>
       			<div className={styles.contentParent}>
         				<div className={styles.content}>
-          					<div className={styles.headline}>答主</div>
-          					<div className={styles.supportingText}>这是一段非常完整的回答 - 没有字数限制</div>
+          					<div className={styles.headline}>{comment.username}</div>
+          					<div className={styles.supportingText}>{comment.content}</div>
         				</div>
         				<div className={styles.subheadParent}>
-          					<div className={styles.subhead}>2024-07-15</div>
+          					<div className={styles.subhead}>{formattedDate}</div>
           					<div className={styles.heartParent}>
-            						<img className={styles.heartIcon} alt="" src="heart.svg" />
-            						<div className={styles.subhead1}>6</div>
+            						<img className={styles.heartIcon} alt="" src="heart.png" />
+            						<div className={styles.subhead1}>{comment.likeCount}</div>
           					</div>
         				</div>
       			</div>

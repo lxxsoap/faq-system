@@ -2,19 +2,35 @@
 import React, { FunctionComponent, memo, useCallback } from 'react';
 import styles from './Questionitem.module.css';
 import { Question } from '@/types/Question';
+import { useRouter } from 'next/navigation';
 
 interface QuestionItemProps {
   question: Question;
-  showFullContent: boolean; // 新增属性
+  showFullContent: boolean; // 是否显示完整内容
 }
 
 const QuestionItem: FunctionComponent<QuestionItemProps> = ({ question, showFullContent }) => {
+  const router = useRouter();
+
   const onListItemContainerClick = useCallback(() => {
-    // 点击事件处理逻辑
-  }, [question]);
+    router.push(`/detail?id=${question.id}`);
+  }, [question.id, router]);
 
   return (
     <div className={styles.listItem} onClick={onListItemContainerClick}>
+          <div className={styles.stateLayerOverlay} />
+      <div className={styles.stateLayer}>
+        <div className={styles.leadingElement}>
+          <div className={styles.buildingBlocksmonogram}>
+            <div className={styles.initial}>A</div>
+          </div>
+        </div>
+        <div className={styles.content}>
+          <div className={styles.headline1}>{question.username}</div>
+          <div className={styles.subhead1}></div>
+        </div>
+      </div>
+
       <div className={styles.headlineWrapper}>
         <div className={styles.headline}>
           <div className={styles.title}>{question.title}</div>
@@ -34,18 +50,7 @@ const QuestionItem: FunctionComponent<QuestionItemProps> = ({ question, showFull
       <div className={styles.supportingText}>
         {showFullContent ? question.content : `${question.content.slice(0, 20)}...`}
       </div>
-      <div className={styles.stateLayerOverlay} />
-      <div className={styles.stateLayer}>
-        <div className={styles.leadingElement}>
-          <div className={styles.buildingBlocksmonogram}>
-            <div className={styles.initial}>A</div>
-          </div>
-        </div>
-        <div className={styles.content}>
-          <div className={styles.headline1}>{question.username}</div>
-          <div className={styles.subhead1}>已解决</div>
-        </div>
-      </div>
+  
       <div className={styles.divider}>
         <div className={styles.divider1} />
       </div>

@@ -21,6 +21,7 @@ export default function Home() {
                 <Context key={index} placeholder={placeholder} />
             ))}
 <PostButton />
+
   </div>
   );
 }

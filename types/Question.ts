@@ -21,8 +21,25 @@ export interface Tag {
     username: string;
     avatar: string | null;
     layer: number;
+    likeCount: number;
     children: Comment[] | null;
   }
+  interface TopicUser {
+    id: number;
+    username: string;
+    telegramName: string | null;
+    avatar: string | null;
+    email: string;
+    mobile: string | null;
+    website: string | null;
+    bio: string | null;
+    score: number;
+    inTime: number;
+    token: string;
+    emailNotification: boolean;
+    active: boolean;
+}
+
   
   export interface Question {
     id: number;
@@ -41,4 +58,5 @@ export interface Tag {
     tags: Tag[];
     style: string;
     comments: Comment[];
+    topicUser: TopicUser;
   }

@@ -8,12 +8,9 @@ const NavigationBar:FunctionComponent = () => {
 	const router = useRouter();
 	const pathname = usePathname(); // 获取当前路径
     
-    // Function to check if the path is active
 	const isActive = (path: string) => {
         return pathname === path;
     };
-
-
 	return (
         <div className={styles.navigationBar5}>
             <div className={styles.navigationBar}>
